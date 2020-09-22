@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Instaclone</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_pack_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div>
+        <%= link_to  "InstagramRails", [:root], class: 'navbar-item' %>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <%= yield %>
+        </div>
+      </div>
+    </section>
+
+  </body>
+</html>
